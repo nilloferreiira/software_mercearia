@@ -1,21 +1,21 @@
 from datetime import datetime
 
 class Pessoa:
-    def __init__(self, nome, telefone, cpf, email, endereco):
+    def __init__(self, nome, email, telefone, cpf, endereco):
         self.nome = nome
         self.email =email
         self.telefone = telefone
         self.cpf = cpf
         self.endereco = endereco
-
+'''
 class Cliente(Pessoa):
     def __init__(self, nome, telefone, cpf, email, endereco, id_cliente):
         super().__init__(nome, telefone, cpf, email, endereco)
         self.id_cliente = id_cliente
-
+'''
 class Vendedor(Pessoa):
-    def __init__(self, nome, telefone, cpf, email, endereco, clt):
-        super().__init__(nome, telefone, cpf, email, endereco)
+    def __init__(self, nome, email, telefone, cpf, endereco, clt):
+        super().__init__(nome, email, telefone, cpf, endereco)
         self.clt = clt
 
 #
