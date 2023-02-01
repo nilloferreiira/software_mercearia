@@ -1,2 +1,2 @@
-banana|5|Frutas|12
-laranja|22|Frutas|450
+uva|10|Frutas|90
+banana|5|Frutas|226

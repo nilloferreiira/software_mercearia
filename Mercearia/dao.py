@@ -58,7 +58,7 @@ class EstoqueDao:
         stock = []
         if len(cls.estoque) > 0:
             for i in cls.estoque:
-                stock.append(Estoque(Produtos(i[0], i[1], i[2]), i[3]))
+                stock.append(Estoque(Produtos(i[0], i[1], i[2]), int(i[3])))
             return stock
     
 class FornecedorDao:
