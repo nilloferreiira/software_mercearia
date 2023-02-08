@@ -101,7 +101,7 @@ class PessoaDao:
             clientes.append(Pessoa(i[0], i[1], i[2], i[3], i[4]))
         return clientes
     
-class VendedorDao():
+class VendedorDao:
     @classmethod
     def salvar(cls, vendedor: Vendedor):
         with open('./arq/vendedor.txt', 'a') as arq:
@@ -109,6 +109,7 @@ class VendedorDao():
                            vendedor.cpf + '|' + vendedor.endereco + '|' + vendedor.clt)
             arq.writelines('\n')
 
+    @classmethod
     def ler(cls):
         with open('./arq/vendedor.txt', 'r') as arq:
             cls.vendedores = arq.readlines()
