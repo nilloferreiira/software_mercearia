@@ -1,4 +1,2 @@
-Laranaja|10|Frutas|200
-banana|50|Frutas|250
-uva|50|Frutas|250
-Alface|10|Verduras|200
+Carne|50|Frios|200
+Laranja|11|Frutas|250

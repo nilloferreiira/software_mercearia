@@ -1,4 +1,2 @@
-banana|5|Frutas|Enzo|Danillo|12|31/01/2023
-banana|5|Frutas|Enzo|Danillo|12|31/01/2023
-uva|10|Frutas|Enzo|Danillo|2|31/01/2023
-banana|5|Frutas|Enzo|Danillo|10|01/02/2023
+Carne|50|Frios|Enzola|Danillo|50|10/02/2023
+Laranja|11|Frutas|Enzola|Danillo|250|10/02/2023

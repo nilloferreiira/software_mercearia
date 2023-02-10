@@ -155,7 +155,7 @@ class ControllerVenda:
             if existe == False:
                 if i.produto.nome_p == nomeProduto:
                     existe = True
-                    if i.quantidade >= quantidadeVendida:
+                    if i.quantidade >= int(quantidadeVendida):
                         quantidade = True
                         i.quantidade = int(i.quantidade) - int(quantidadeVendida)
                         vendido = Venda(Produtos(i.produto.nome_p, i.produto.preco, i.produto.categoria), vendedor, comprador, quantidadeVendida)
@@ -431,41 +431,3 @@ class ControllerVendedor:
                 total += 1
             print('===============================')
             print(f'Total de vendedores: {total}')
-
-
-#v = ControllerVendedor()
-#v.cadastrarVendedor('Enzo1', 'enzo@minasgerais.com', '3111111111', '12315678912', 'Jequitionha', '12345671912')
-#v.removerVendedor('Enzo1')
-#v.alterarVendedor('Enzo1', 'Enzo2', 'enzo@minasgerais.com', '3111111111', '12315678912', 'Jequitionha', '12345671912')
-#v.mostrarVendedores()
-
-#d = ControllerCliente()
-#d.mostrarClientes()
-#d.alterarCliente('dani', 'sui', 'dani@gmail.com', '79996415901', '12345678998', 'aju')
-#d.cadastrarCliente('sui', 'sui@gmail.com', '7992299999', '12345622811', 'aju')
-#d.removerCliente('sui')
-
-#a = ControllerFornecedor()
-#a.cadastrarFornecedor('FornecedorLaranja', '92345678912345', '9999999995', 'Frutas')
-#a.removerFornecedor('FornecedorLaranja')
-#a.alterarFornecedor('FornecedorLaranja', 'FornecedorUva', '12345678912349', '7999999996', 'Frutas')
-#a.mostrarFornecedores()
-
-#z = ControllerVenda()
-#z.mostrarVendas('31/1/2023', '1/2/2023')
-
-#a = ControllerVenda()
-#a.cadastrarVenda('banana', 'Enzo', 'Danillo', 10)
-
-#c = ControllerVenda()
-#c.relatorioProdutos()
-
-#b = ControllerEstoque()
-#b.cadastrarProduto('Carne', '50', 'Frios', 250)
-#b.alterarProduto('Carne', 'Alface', '10', 'Verduras', '200')
-#b.removerProduto('Alface')
-
-#p = ControllerCategoria()
-#p.cadastraCategoria('Frios')
-#p.removerCategoria('Verduras')
-#p.alterarCategoria('Frios', 'Verduras')
